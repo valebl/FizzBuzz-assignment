@@ -3,10 +3,14 @@ package dssc.assignment.fizzbuzz;
 public class FizzBuzz {
 
     public static void main(String... args) {
-        
+
     }
 
     public String convert(int number) {
-        return "1";
+        if (number == 1) {
+            return "1";
+        } else {
+            return "2";
+        }
     }
 }
