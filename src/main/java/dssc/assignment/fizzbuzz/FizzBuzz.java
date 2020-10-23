@@ -7,18 +7,12 @@ public class FizzBuzz {
     }
 
     public String convert(int number) {
-        if (number == 5) {
+        if (number % 5 == 0) {
             return "Buzz";
-        } else if (number == 10) {
-            return "Buzz";
-        } else if (number == 100) {
-            return "Buzz";
+        } else if (number % 3 == 0) {
+            return "Fizz";
         } else {
-            if (number % 3 == 0) {
-                return "Fizz";
-            } else {
-                return Integer.toString(number);
-            }
+            return Integer.toString(number);
         }
     }
 }
