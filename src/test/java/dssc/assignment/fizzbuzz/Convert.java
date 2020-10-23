@@ -29,4 +29,11 @@ public class Convert {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Buzz", fizzBuzz.convert(number));
     }
+
+    @ParameterizedTest
+    @ValueSource(ints = {15})
+    void multiples_of_3_and_5_to_FizzBuzz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("FizzBuzz", fizzBuzz.convert(15));
+    }
 }
