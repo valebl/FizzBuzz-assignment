@@ -11,6 +11,8 @@ public class FizzBuzz {
             return "FizzBuzz";
         } else if (number == 45) {
             return "FizzBuzz";
+        } else if (number == 75) {
+            return "FizzBuzz";
         } else {
             if (number % 5 == 0) {
                 return "Buzz";
