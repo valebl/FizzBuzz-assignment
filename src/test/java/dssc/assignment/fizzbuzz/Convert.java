@@ -1,5 +1,6 @@
 package dssc.assignment.fizzbuzz;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -13,6 +14,13 @@ public class Convert {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(expected, fizzBuzz.convert(number));
     }
+
+    @Test
+    void number_3_to_Fizz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Fizz", fizzBuzz.convert(3));
+    }
+}
 
     /*@Test
     void number_1() {
@@ -31,7 +39,4 @@ public class Convert {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("40", fizzBuzz.convert(40));
     }*/
-
-
-}
 
