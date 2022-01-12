@@ -11,5 +11,11 @@ public class ConvertNumbersToStrings {
         assertEquals("1", fizzBuzz.convert(1));
     }
 
+    @Test
+    void number_2() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("2", fizzBuzz.convert(2));
+    }
+
 }
 
