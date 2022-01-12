@@ -1,11 +1,20 @@
 package dssc.assignment.fizzbuzz;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ConvertNumbersToStrings {
+public class Convert {
 
-    @Test
+    @ParameterizedTest
+    @CsvSource({"1, 1", "2, 2", "40, 40"})
+    void numbers_not_divisible_by_3_or_5_to_strings(int number, String expected) {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(expected, fizzBuzz.convert(number));
+    }
+
+    /*@Test
     void number_1() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("1", fizzBuzz.convert(1));
@@ -21,6 +30,8 @@ public class ConvertNumbersToStrings {
     void number_40() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("40", fizzBuzz.convert(40));
-    }
+    }*/
+
+
 }
 
