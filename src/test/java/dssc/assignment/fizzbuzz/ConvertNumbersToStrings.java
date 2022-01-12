@@ -22,6 +22,5 @@ public class ConvertNumbersToStrings {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("40", fizzBuzz.convert(40));
     }
-
 }
 
